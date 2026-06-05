@@ -1,0 +1,242 @@
+
+
+<!-- intro.html
+HTML -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+
+    ! what is html 
+    ? full form 
+    hyper text markup language
+    
+    ? meaning of the full form 
+    1. hyper text : a text that is a link
+    2. markup language : a language that contains predefined words - keyword with the help of that we can add the content in the web page 
+
+
+    html :
+
+
+    ? what is tag in html  :
+    todo :  it is a keyword { predefined words that have some meaning in the language } that we write inside the <> like , <keyword> , with the help of that we tells the browser how to display the content 
+        for eg : 
+        >>>> h1 => main heading
+        >>>> h2 => heading
+        >>>> h3 => sub heading
+
+        <h1>this is the main heading</h1>
+        <h2>this is the heading</h2>
+        <h3>this is the sub heading</h3>
+        <bro> it will not work because bro word in not a keyword in html  </bro>
+    
+    <H1> html tags are case in-sensitive</H1>
+    
+    ! tags are case in-sensitive why ? 
+    todo : because browser correct the case -> anyCase to lowercase 
+    <H1> html tags are case in-sensitive</H1>
+    <h1> html tags are case in-sensitive</h1>
+
+    how many tags are there in html ? 150+
+    how many tags u need to remember ? 0
+
+    ? Types of tags 
+    1. paired tags :  opening and closing tag 
+    >>>> eg : html , body , head , title, h1 , h2 ,h3 
+    2. un-paired tags :  self closing tag 
+    >>>> eg : meta 
+
+    ? categories of tags in html 
+    1. Heading tags 
+    2. formatting tags
+    3. semantic tags
+    4. list tags
+    5. table tags
+    6. form tags 
+    7. multi-media tags 
+    
+    
+    
+    1. Heading tags  : h1 to h6  ✅ 
+    2. formatting tags : tags that formate the text   ✅
+    3. semantic tags :  tags that tells there meaning
+    4. list tags : tags  that used to create list 
+    5. table tags : tags that used to create tables 
+    6. form tags  : tags that used to create forms 
+    7. multi-media tags : img , link , audio, video, svg, etc....
+
+
+
+    -->
+
+    <!-- ! heading tags  : h1 to h6  
+    ? h1 : use for main heading : onces in web page 
+    ? h2 : use for heading : 0 to n 
+    ? h3 : use for sub heading  : 0 to n 
+    todo : h4, h5 and h6 : avoid to use why ?? , because of its small size 
+    
+    * how we are going to use the h1 , h2 and h3 tags in the web page while designing the layouts 
+
+    h1 : main heading : once
+            > h2 : heading 
+                    > h3 : sub heading 
+                    > h3 : sub heading 
+                    > h3 : sub heading 
+
+            > h2 : heading 
+                    > h3 : sub heading 
+                          box >>> h3 
+                    > h3 : sub heading 
+                    > h3 : sub heading 
+    
+            ? why this pattern : SEO & easy layout
+    -->
+
+    <h1>this is the main heading</h1>
+    <h2>this is the heading</h2>
+    <h3>this is the sub heading</h3>
+    <h4>this is the h4 heading</h4>
+    <h5>this is the h5 heading</h5>
+    <h6>this is the h6 heading</h6>
+
+    <!-- 
+    how to add heading ? h1 tp h6 tags  ✅
+    how to create or add the paragraph  : p tag ✅ 
+    how to add the image in web page : img tag  ✅ 
+    how to create links in web page : a tag 
+    -->
+
+    <p>
+      this is the p tag that we are using to create the paragraph in the web
+      page
+    </p>
+
+    <!-- 
+    ! img tag : used to add the image in the web page
+    img  : tag >> it tells the browser it is an image , so treat like an image 
+    
+    meta data : additional information about the data 
+
+    attribute : it is a keyword ,  
+    ? why we use attribute 
+    additional information that we add in tag 
+    ? it stores what > 
+    additional information of the tag 
+
+    ? use : we are adding the additional information to the tag by using the attributes
+
+    src  : attribute : >> it holds the image address
+    alt  : attribute : >> This attribute defines an alternative text description of the image, 
+    we define the img in text , if img is not visible text will visible.
+
+
+    ! a tag 
+    1. a :  tag  -====> it tells the browser it is a link 
+    2. href  : attribute : ====> it contains the url ,such as when u click on the text / hyper text where user should re-direct 
+    3. target : attribute ===>  where u want to open the url , same tab that is default or new tab that is "_blank"
+
+    ! what is the use of the text b/w the a tag 
+    ===> to display something , if there is no content , no click , no click means no trigger of href value that is url , 
+
+
+    ? what is the difference b/w a with href & without href
+    normal text 
+    <a> go to google page </a> 
+
+    hyper text - it work like a link 
+    <a href="https://www.google.com" target="_blank"> go to google page </a>
+    
+    ? what is the difference b/w a with href no url & without href with url 
+
+    it is a link but there is no re-direction / navigation
+    <a href="#"> go to google page </a> 
+    
+    hyper text - it work like a link 
+    it is a link as well as there is a re-direction / navigation to the url that we have in the href attribute 
+    <a href="https://www.google.com" target="_blank"> go to google page </a>
+
+
+    ! href make the text hyper text , or it make the link 
+    ? what is the use of href : 
+      >>  make the link 
+      >>  contains the url where user will redirect or navigate, whenever user click on the text that we write b/w the a opening tag & a closing tag 
+     -->
+
+    <h2>We are adding the image with src value from the internet</h2>
+    <img
+      src="https://wallpapers.com/images/featured/goku-e2us8ym3rraxbnve.jpg"
+      alt=""
+    />
+
+    <h2>
+      We are adding the image with src value from
+      <br />
+      the local system {laptop}
+    </h2>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <hr />
+    <br />
+    <br />
+    <img src="./img1.png" alt="" width="1000" />
+    <br />
+    <br />
+    <hr />
+    <br />
+    <br />
+    <img
+      src="./img2.png"
+      alt="this is the goku image , that i am using as an example of img , in eg 2 , this image is present in my local system with name img2.png, if you are getting this text in your ui or screen that means the image path in src is  wrong go and check"
+    />
+
+    <br />
+    <br />
+    <br />
+    <hr />
+    <hr />
+    <br />
+    <br />
+
+    <!-- 
+    
+    opening of tag 
+    attributes 
+     text { content }
+     closing of tag
+
+
+     opening tag + attribute  + content + closing tag == elements=
+
+     
+    -->
+
+    <br />
+    <br />
+    <br />
+
+    <!-- <a
+      href="url where u want to navigate the user whenever user click on this text "
+    >
+      go to google page
+    </a> -->
+
+    <a> go to google page </a>
+
+    <br />
+    <br />
+    <a href="https://www.google.com" target="_blank"> go to google page </a>
+    <br />
+    <br />
+    <br />
+  </body>
+</html>
