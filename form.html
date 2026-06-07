@@ -1,27 +1,90 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-<h1>🔥 Ultimate HTML Form – All Input Types Demo</h1>
-<form action="#" method="post" enctype="multipart/form-data">
-    <!-- ================= BASIC TEXT INPUTS ================= -->
-     <fieldset>
+  </head>
+  <body>
+    <h1>🔥 Ultimate HTML Form – All Input Types Demo</h1>
+    <form action="#" method="post" enctype="multipart/form-data">
+      <!-- ================= BASIC TEXT INPUTS ================= -->
+      <fieldset>
         <legend>Basics Input</legend>
         <label for="">Full Name:</label>
-        <input type="text" name="fullName" placeholder="Enter your name "><br><br>
+        <input
+          type="text"
+          name="fullName"
+          placeholder="Enter your name "
+        /><br /><br />
         <label for="">Password:</label>
-        <input type="password" name="password" id=""><br><br>
-        <label for="">Email:
-        </label>
-        <input type="email" name="email"><br><br>
+        <input type="password" name="password" id="" /><br /><br />
+        <label for="">Email: </label>
+        <input type="email" name="email" /><br /><br />
         <label for="">Phone No:</label>
-        <input type="tel" name="phone" id="" placeholder="=+91XXXXXXXX">
-     </fieldset>
-</form>
-</body>
+        <input type="tel" name="phone" id="" placeholder="+91XXXXXXXXXX" />
+      </fieldset>
+      <!-- ================= NUMBER & RANGE ================= -->
+      <fieldset>
+        <legend>Number & Ranger</legend>
+        <label for="">Age:</label>
+        <input type="number" name="age" min="1" max="100" /><br /><br />
+
+        <label for="">Experience Level (0-10):</label>
+        <input type="range" name="experience" min="0" max="10" />
+      </fieldset>
+
+      <!-- ================= DATE & TIME INPUTS ================= -->
+      <fieldset>
+        <legend>Date & Time Inputs</legend>
+
+        <label for="">Date</label>
+        <input type="date" name="date" /><br /><br />
+
+        <label for="">Time</label>
+        <input type="time" name="time" /><br /><br />
+
+        <label for="">Date & Time</label>
+        <input type="datetime-local" name="datetime" id="" /><br /><br />
+
+        <label for="">Month</label>
+        <input type="month" name="month" /><br /><br />
+
+        <label for="">week</label>
+        <input type="week" name="week" /><br /><br />
+      </fieldset>
+
+        <!-- ================= COLOR & FILE ================= -->
+    <fieldset>
+        <legend>Color & File</legend>
+
+        <label>Favorite Color:</label><br>
+        <input type="color" name="color"><br><br>
+
+        <label>Upload Resume:</label><br>
+        <input type="file" name="resume"><br><br>
+    </fieldset>
+
+     <!-- ================= RADIO BUTTONS ================= -->
+      <fieldset>
+         <legend>Radio Buttons</legend>
+
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="male"> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+        <input type="radio" name="gender" value="other"> Other<br>
+      </fieldset>
+
+       <!-- ================= CHECKBOXES ================= -->
+    <fieldset>
+        <legend>Checkboxes</legend>
+
+        <label>Skills:</label><br>
+        <input type="checkbox" name="skills" value="html"> HTML<br>
+        <input type="checkbox" name="skills" value="css"> CSS<br>
+        <input type="checkbox" name="skills" value="js"> JavaScript<br>
+        <input type="checkbox" name="skills" value="react"> React<br>
+    </fieldset>
+    </form>
+  </body>
 </html>
