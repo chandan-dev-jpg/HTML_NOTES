@@ -85,6 +85,63 @@
         <input type="checkbox" name="skills" value="js"> JavaScript<br>
         <input type="checkbox" name="skills" value="react"> React<br>
     </fieldset>
+
+    
+    <!-- ================= SELECT DROPDOWN ================= -->
+     <fieldset>
+        <legend>Select / Dropdown</legend>
+
+        <label>Country:</label><br>
+        <select name="country">
+            <option value="">--Select Country--</option>
+            <option>India</option>
+            <option>USA</option>
+            <option>UK</option>
+            <option>Canada</option>
+        </select><br><br>
+
+        <label>Languages Known (Multiple):</label><br>
+        <select name="languages" multiple>
+            <option>English</option>
+            <option>Hindi</option>
+            <option>Telugu</option>
+            <option>Tamil</option>
+        </select>
+    </fieldset>
+
+      <!-- ================= DATALIST ================= -->
+    <fieldset>
+        <legend>Datalist (Auto Suggestions)</legend>
+
+        <label>Favorite Browser:</label><br>
+        <input list="browsers" name="browser">
+
+        <datalist id="browsers">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Edge">
+            <option value="Safari">
+        </datalist>
+    </fieldset>
+ <!-- ================= TEXTAREA ================= -->
+    <fieldset>
+        <legend>Textarea</legend>
+
+        <label>About Yourself:</label><br>
+        <textarea name="about" rows="5" cols="50"></textarea>
+    </fieldset>
+
+    <!-- ================= HIDDEN FIELD ================= -->
+    <input type="hidden" name="userId" value="12345">
+
+    <!-- ================= BUTTON TYPES ================= -->
+    <fieldset>
+        <legend>Buttons</legend>
+
+        <input type="submit" value="Submit Form">
+        <input type="reset" value="Reset Form">
+        <input type="button" value="Normal Button">
+    </fieldset>
     </form>
   </body>
 </html>
