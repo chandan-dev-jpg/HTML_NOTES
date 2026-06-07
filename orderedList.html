@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!-- 
+    todo :: ol : ordered list 
+    todo : type of sequence  : type attribute 
+
+    default value of the type of the sequence is : 1
+    type = "1"
+    i.e., <ol type="1">
+
+        whenever u create ol list , by default type attribute is there with default value that is 1 thats why u get the sequence of 1 2 3 ....
+
+    todo : type attribute values are  : A, a, I, i, 1 
+    Indicates the numbering type:
+
+    'a' indicates lowercase letters,
+    'A' indicates uppercase letters,
+    'i' indicates lowercase Roman numerals,
+    'I' indicates uppercase Roman numerals,
+    and '1' indicates numbers (default).
+    The type set is used for the entire list unless a different type attribute is used within an enclosed <li> element.
+
+        ! what if i give  number as a type attribute value 
+        ---- what will be the o/p 
+
+
+        * type number -- we don't have type number  so, i will give default value of the type attribute that is 1
+    
+
+
+        ? how we can change the starting index/ value of the sequence of the ol list  
+        --- * start attribute  
+
+        todo : the value of the start attribute is always a number like values :  1 ,2 3,4  not abc, i etc...
+
+
+
+        if u have 0 & -ve values in any type attribute value  { A, a, I, i , 1 } u always get the output with numbers 
+
+
+        * 0 to 9 -> 1 to 10 
+        31 
+
+        0 to 9 
+
+        1 to 10 -> cycles 
+
+        tens represent how many cycles are done : 2 
+        1
+        2
+        3
+        4
+        5
+        6
+        7
+        8
+        9
+        10
+        11
+        12
+        13
+        14
+        15
+        16
+        17
+        18
+        19
+        20
+
+        21
+        12
+        13
+        14
+        15
+        16
+        17
+        18
+        19
+        20 
+
+
+         a to z : 1 to 26  : 1 cycle count 
+
+         a b c ...... z : 1st
+         aa ab ac ...... az : 2nd 
+         ba bb bc ...... bz : 3rd 
+
+    -->
+
+    <p>
+      ordered list with default type attribute value , i.e., without type
+      attribute
+    </p>
+    <ol>
+      <li>this is the first list item</li>
+      <li>this is the second list item</li>
+      <li>this is the third list item</li>
+    </ol>
+
+    <hr />
+    <p>
+      ordered list with type attribute value { 1 }, i.e., with type attribute
+    </p>
+
+    <ol type="1">
+      <li>this is the first list item</li>
+      <li>this is the second list item</li>
+      <li>this is the third list item</li>
+    </ol>
+
+    <pre>
+that means : 
+        whenever u create ol list , by default type attribute is there with default value that is 1 thats why u get the sequence of 1 2 3 ....
+    </pre>
+
+    <!-- <pre>
+        first line of the poem
+                    second line of the poem
+        third line of the poem
+                    second line of the poem
+    </pre> -->
+
+    <hr />
+    <p>
+      ordered list with type attribute value { A }, i.e., with type attribute
+    </p>
+
+    <ol type="A">
+      <li>this is the first list item</li>
+      <li>this is the second list item</li>
+      <li>this is the third list item</li>
+    </ol>
+    <hr />
+    <p>
+      ordered list with type attribute value { a }, i.e., with type attribute
+    </p>
+
+    <ol type="a">
+      <li>this is the first list item</li>
+      <li>this is the second list item</li>
+      <li>this is the third list item</li>
+    </ol>
+    <hr />
+    <p>
+      ordered list with type attribute value { I }, i.e., with type attribute
+    </p>
+
+    <ol type="I">
+      <li>this is the first list item</li>
+      <li>this is the second list item</li>
+      <li>this is the third list item</li>
+    </ol>
+    <hr />
+    <p>
+      ordered list with type attribute value { i }, i.e., with type attribute
+    </p>
+
+    <ol type="i">
+      <li>this is the first list item</li>
+      <li>this is the second list item</li>
+      <li>this is the third list item</li>
+    </ol>
+
+    <hr />
+    <p>
+      ordered list with type attribute value { number }, i.e., with type
+      attribute, we get default value that is 1 because number is the not a
+      valid value of the type attribute
+    </p>
+    <ol type="number">
+      <li>this is the first list item</li>
+      <li>this is the second list item</li>
+      <li>this is the third list item</li>
+    </ol>
+
+    <hr />
+
+    <p>
+      how we can change the starting index/ value of the sequence of the ol list : answer  is start attribute
+    </p>
+    <ol type="1" start="10">
+      <li>demo1</li>
+      <li>demo2</li>
+      <li>demo3</li>
+    </ol>
+    <!-- The start attribute is used with an ordered list (<ol>) to specify the starting number of the list. -->
+    <ol type="1" start="-10">
+      <li>demo1</li>
+      <li>demo2</li>
+      <li>demo3</li>
+    </ol>
+
+    <ol type="A" start="10">
+      <li>demo1</li>
+      <li>demo2</li>
+      <li>demo3</li>
+    </ol>
+    <ol type="A" start="-10">
+      <li>demo1</li>
+      <li>demo2</li>
+      <li>demo3</li>
+    </ol>
+    <hr />
+
+    <p>
+      change the starting index/ value of the sequence of the ol list with 10
+      and reversed the list sequence
+    </p>
+    <ol type="1" start="10" reversed>
+      <li>demo1</li>
+      <li>demo2</li>
+      <li>demo3</li>
+    </ol>
+
+    <hr />
+    <p>use the starting value 1 and reversed : with type value 1</p>
+    <ol type="1" start="1" reversed>
+      <li>demo1</li>
+      <li>demo2</li>
+      <li>demo3</li>
+      <li>demo1</li>
+      <li>demo2</li>
+      <li>demo3</li>
+    </ol>
+
+    <hr />
+    <p>use the starting value 26 and reversed : with type value A</p>
+    <ol type="A" start="26">
+      <li>demo1</li>
+      <li>demo2</li>
+      <li>demo3</li>
+      <li>demo1</li>
+      <li>demo2</li>
+      <li>demo3</li>
+    </ol>
+</body>
+</html>
