@@ -1,0 +1,68 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+    ? what is the use of the name attribute in the input field type radio 
+    * name of the data / data container 
+    * to create the options such as out of all input fields user can select only one 
+  
+    ? how to select one radio button {input field} in forms 
+    * by giving the same value to the name attribute 
+    ---- for Eg :  name="gender" in all 3 input fields that have type radio 
+  
+    ? whenever user select any radio button : the data we get in the DB is on : how to fix 
+    * by using the value attribute in the radio input field , with some info/value 
+    ----- for Eg: value ="male"
+    -->
+    <h1> we are learn the radio type input field in the html form</h1>
+    <form method="get">
+      <section>
+        <label for="userName">userName</label>
+        <input type="text" name="userName" id="userName" />
+      </section>
+      <br />
+
+      <section>
+        <label for="email">email</label>
+        <input type="email" name="email" id="email" />
+      </section>
+      <br />
+
+      <section>
+        <label for="password">password</label>
+        <input type="password" name="password" id="password" />
+      </section>
+      <br />
+      <section>
+        <label for="Confirm_password">Confirm_password</label>
+        <input type="password" name="Confirm_password" id="Confirm_password" />
+      </section>
+      <br />
+
+      <section>
+        <p>Gender :</p>
+
+        <section>
+          <input type="radio" name="gender" id="Male" value="Male" />
+          <label for="Male">Male</label>
+
+          <input type="radio" name="gender" id="Female" value="Female" />
+          <label for="Female">Female</label>
+
+          <input type="radio" name="gender" id="other" value="other" />
+          <label for="other">other</label>
+        </section>
+      </section>
+
+      <button>submit</button>
+    </form>
+  </body>
+</html>

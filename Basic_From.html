@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+    ? what is html form : 
+    * it is a medium to take the data, send the data etc.. " crud operation "
+<-- In HTML, the <form> tag is used to create a form that collects user input. -->
+    ? why we need html form 
+    * to take the data, send the data etc.. " crud operation "
+
+    ? how to create the html form 
+    * form tag 
+
+    ? if i use form tag , what happens 
+    * it tells the browser , we are creating form , treat the code that we have inside the form tag as part of html form 
+
+    ? for form what u need 
+    1. input field  - any kind 
+    2. submit button
+
+    input - type default value - text
+    form button - type default value - submit
+
+    ? what will happen when user submit the form
+    todo : page will refresh 
+    
+    ? what will happen when page refresh 
+    * website or web page reload - html  code executes again
+
+    ? what will happen when page reload : 
+    * we get the webpage code again and then html  code executes again
+    
+    ? what will happen  html  code executes again
+    * u will get blank form  
+
+    ? why will we get blank form 
+    * because the website / webpage have nothing as a default value 
+
+
+    ? what is placeholder 
+    * it is an attribute 
+
+    ? what is use of the placeholder
+    add the hint / temp text inside the input field , for the user , like what kind of input developer wants or user need to type 
+
+    ? why placeholder is a temp text .
+    1. as soon as user type it remove 
+
+    * 2. if input field having any data or value, placeholder is not visible 
+    else it is visible 
+
+    * 3.  no input value , placeholder will visible else placeholder will not visible 
+
+    ! ----------------------------------------------------
+
+    ? how to create the html form 
+    * write the html form code inside the form tag 
+
+    ? how to create input field 
+    * by using input tag 
+
+    ? how many attributes we have in an input field 
+    * we learn 3 
+    1. type 
+    2. id 
+    3. placeholder 
+
+    ? what is use of the type attribute inside the input field 
+    * it tells or decide what kind of input field user need to write or we want 
+    --- Eg :  email , text, tel , number , color , file , image, submit , search , reset ,password etc..
+
+    ? how many values we have for the input type attribute : 22 values 
+
+    ? what will happen if i use type with value email 
+    * it validate the input value as an email 
+    
+    ? what will happen if i use type with value password 
+    * it convert the text into disc 
+
+    ? what is the use of the id attribute inside the input field  
+    * to give the  unique name for the input field 
+
+    ? what is the use of the placeholder in the input field 
+    * to give or add the temp text or hint inside the input field for the user , how or what kind of input user need to type or fill 
+
+
+    ? how many attribute we learn in label : 
+    * 1 - for 
+
+    ? what is the use of the "for" attribute inside the label tag 
+    * it is used to link with the input field
+
+    ? how we can link label with input field 
+    * we need to use "for" attribute inside the label & "id" attribute inside the input field with same values 
+    -- for Eg : 
+   todo :  <label for="task_02">Task 02: </label>
+   todo :  <input id="task_02" />
+
+   ? what will happen in the UI , after linking the label with the input field 
+   * whenever any user click on the label text , linked input field will be in focused 
+
+    ? we need to use placeholder or label 
+    * we need to use according to the UI / client requirements 
+    ! if u are creating simple & easy or short UI 
+    -- Eg : login , simple signup 
+    todo : u can use placeholder alone 
+
+    ! if u are creating big or complex UI 
+    --- Eg : registration , application , resume, account opening form , account/user data validation 
+
+    todo : placeholder as well as label 
+    
+    
+    -->
+    <h1>html form</h1>
+    <form>
+      <label for="sameValueinFor_ID_attribute">User task 01: </label>
+      <input
+        type="search"
+        id="sameValueinFor_ID_attribute"
+        placeholder="temp text/hint for the input field"
+      />
+      <br />
+      <br />
+      <label for="task_02">Task 02: </label>
+      <input id="task_02" type="text" placeholder="enter valid user task 02" />
+      <br />
+      <br />
+      <label for="email">User email </label>
+      <input id="email" type="email" placeholder="enter valid user email id " />
+      <br />
+      <br />
+      <label for="password">User password </label>
+      <input
+        id="password"
+        type="password"
+        placeholder="enter valid user password"
+      />
+      <br />
+      <br />
+      <label for="C_password">User confirm password </label>
+      <input
+        id="C_password"
+        type="password"
+        placeholder="enter valid user C_password "
+      />
+      <br />
+      <br />
+      <button type="reset">reset</button>
+      <button>submit</button>
+    </form>
+  </body>
+</html>
